@@ -1,11 +1,11 @@
-import {GET_DATA} from '../actions/actionType';
-const DeFAULT_STATE = {};
-function reducerEmployee(state = DeFAULT_STATE, action){
+import data from './data.json';
 
+const DEFAULT_STATE = {name: 'abc', age: 'xuys'};
+
+const reducerEmployee = (state = DEFAULT_STATE, action)=>{
     switch(action.type){
-        case GET_DATA:
-            return action.payload;
-
+        case "GET_DATA":
+            return data;
         default:
             return state;
     }

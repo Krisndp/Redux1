@@ -22,9 +22,6 @@ const store = createStore(reducer)
 export default class DemoRedux extends React.Component {
     render() {
         return (
-            // <View style = {{flex:1, backgroundColor: 'red'}}>
-
-            // </View>
             <Provider store={store}>
                 <App />
             </Provider>
